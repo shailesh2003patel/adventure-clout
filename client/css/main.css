@@ -1,0 +1,72 @@
+/* Reset + base */
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:#f5f7fb;color:#0f172a}
+.app{min-height:100vh;display:flex;flex-direction:column}
+
+/* Topbar */
+.topbar{height:64px;background:#ffffff;border-bottom:1px solid #e6eef8;display:flex;align-items:center;justify-content:space-between;padding:0 20px;box-shadow:0 1px 6px rgba(14,30,37,0.04)}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:40px;height:40px;border-radius:8px;background:linear-gradient(135deg,#3b82f6,#06b6d4);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+.title{font-weight:600;color:#0f172a}
+.topbar-right{display:flex;align-items:center;gap:12px}
+.user-small{color:#334155;padding-right:6px}
+.btn-ghost{background:transparent;border:1px solid transparent;padding:8px 12px;border-radius:8px;cursor:pointer}
+
+/* Layout grid */
+.layout{display:flex;flex:1;gap:20px;padding:20px;max-width:1200px;margin:0 auto;width:100%}
+
+/* Sidebar */
+.sidebar{width:220px;background:#fff;border-radius:12px;padding:16px;box-shadow:0 6px 18px rgba(14,30,37,0.06);display:flex;flex-direction:column;justify-content:space-between}
+.profile-mini{display:flex;gap:12px;align-items:center;margin-bottom:12px}
+.avatar{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,#f97316,#ef4444);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+.username{font-weight:600}
+.rank{font-size:12px;color:#64748b}
+.nav{display:flex;flex-direction:column;gap:8px;margin-top:10px}
+.nav-item{background:transparent;border:0;text-align:left;padding:10px;border-radius:8px;cursor:pointer;color:#0f172a}
+.nav-item:hover{background:#f1f8ff}
+.nav-item.active{background:#e6f0ff}
+.side-footer{text-align:center;padding-top:10px;border-top:1px dashed #eef2ff}
+.points{font-size:20px;font-weight:700;color:#0f172a}
+
+/* Main content */
+.main{flex:1;display:flex;flex-direction:column;gap:18px}
+.hero h1{margin:0;font-size:24px}
+.muted{color:#64748b}
+.small{font-size:12px}
+
+/* grid cards */
+.grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
+.card{background:#fff;border-radius:12px;padding:16px;box-shadow:0 10px 30px rgba(14,30,37,0.05)}
+.user-card-top{display:flex;gap:14px;align-items:center}
+.avatar-lg{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,#3b82f6,#06b6d4);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:22px}
+.user-card h2{margin:0}
+
+/* progress */
+.progress-wrap{margin-top:14px}
+.progress-info{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.progress{height:14px;background:#eef2ff;border-radius:999px;overflow:hidden}
+.progress-bar{height:100%;background:linear-gradient(90deg,#f97316,#f59e0b);width:0%}
+
+/* shop card */
+.shop-actions{display:flex;align-items:center;justify-content:space-between;margin-top:12px}
+.btn{background:#3b82f6;color:#fff;padding:10px 14px;border-radius:8px;border:0;cursor:pointer}
+
+/* tasks list */
+.tasks-section .task-list{display:flex;flex-direction:column;gap:10px}
+.task{display:flex;justify-content:space-between;align-items:center;padding:12px;border-radius:8px;background:linear-gradient(180deg,#ffffff,#fbfdff);border:1px solid #eef6ff}
+.task .left{display:flex;gap:12px;align-items:center}
+.task .dot{width:10px;height:10px;border-radius:50%;background:#f97316}
+.task .title{font-weight:600}
+.task .meta{color:#64748b;font-size:13px}
+.task .actions{display:flex;gap:8px}
+.small-btn{padding:8px 10px;border-radius:8px;border:1px solid #dbeafe;background:transparent;cursor:pointer}
+
+/* responsive */
+@media(max-width:880px){
+  .layout{padding:12px}
+  .grid{grid-template-columns:1fr; }
+  .sidebar{display:none}
+}
+
+
+

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Adventure Clout — Dashboard</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body>
+  <div class="app">
+
+    <!-- Topbar -->
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo">AC</div>
+        <div class="title">Adventure Clout</div>
+      </div>
+      <div class="topbar-right">
+        <span id="userSmall" class="user-small">—</span>
+        <button id="logout" class="btn-ghost">Logout</button>
+      </div>
+    </header>
+
+    <!-- Layout: sidebar + main -->
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="profile-mini">
+          <div id="avatar" class="avatar">A</div>
+          <div>
+            <div id="username" class="username">Guest</div>
+            <div id="rank" class="rank">Novice</div>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <button class="nav-item active">Home</button>
+          <button class="nav-item">Tasks</button>
+          <button class="nav-item">Shop</button>
+          <button class="nav-item">Settings</button>
+        </nav>
+
+        <div class="side-footer">
+          <small>Points</small>
+          <div id="points" class="points">0</div>
+        </div>
+      </aside>
+
+      <main class="main">
+        <section class="hero">
+          <h1>Welcome</h1>
+          <p class="muted">Complete tasks, earn points, increase rank & get verified.</p>
+        </section>
+
+        <section class="grid">
+          <div class="card user-card">
+            <div class="user-card-top">
+              <div class="avatar-lg" id="avatarLarge">A</div>
+              <div>
+                <h2 id="displayName">User</h2>
+                <div class="muted" id="emailDisplay">email@example.com</div>
+              </div>
+            </div>
+
+            <div class="progress-wrap">
+              <div class="progress-info">
+                <span>Level Progress</span>
+                <strong id="levelPct">0%</strong>
+              </div>
+              <div class="progress">
+                <div id="progressBar" class="progress-bar" style="width:0%;"></div>
+              </div>
+              <div class="muted small">Rank: <span id="rankLabel">Novice</span></div>
+            </div>
+          </div>
+
+          <div class="card shop-card">
+            <h3>Adventure Shop</h3>
+            <p class="muted">Exchange points for boosters & profile badges.</p>
+            <div class="shop-actions">
+              <button id="goShop" class="btn">Go to Shop</button>
+              <div class="muted small">Cart: <span id="cartCount">0</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="tasks-section">
+          <h3>Daily Tasks</h3>
+          <div id="taskList" class="task-list">
+            <!-- JS will insert tasks -->
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script src="/js/dashboard.js"></script>
+</body>
+</html>
+
